@@ -1,0 +1,1083 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Hind+Siliguri:wght@300&family=Quicksand:wght@300&family=Smooch&family=Spartan:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+
+/* header area */
+
+.header{
+    /* border: 4px solid red; */
+    border-bottom: 1px solid rgb(126, 126, 126);
+    width: 100%;
+    height: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+.header h1{
+    font-size: 2.5em;
+    font-family:'Smooch', cursive;
+    text-align: center;
+}
+
+.header span{
+    font-size: 2em;
+}
+
+
+/* menu */
+
+#menu ul{
+    text-align: center;
+    border-bottom: 2px solid rgb(32, 32, 32);
+    height: 40px;
+    
+}
+#menu ul li{
+    display: inline-flex;
+    margin-left: 2em;
+}
+
+#menu ul li:nth-child(1){
+    margin-left: 0;
+}
+#menu ul li a{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 15px;
+    font-weight: 10;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.close, .open{
+    display: none;
+}
+
+#menu ul li a:hover{
+    text-decoration: underline;
+}
+
+#menu ul li a:active{
+    color: rgb(255, 171, 102);
+}
+
+/* slider */
+
+#slider, #slider2{
+    position: relative;
+    margin: 50px 5%;
+    overflow: hidden;
+    
+}
+
+#slider ul, #slider2 ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#slider ul li, #slider2 ul li{
+    
+    position: relative;
+    display: block;
+    float:left;
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.5);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 2.3em;
+    word-spacing: 2px;
+}
+
+
+#slider ul p, #slider2 ul p{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    line-height: 35px;
+}
+
+#slider ul span, #slider2 ul span{
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 0.4em;
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    transform: translate(250%, 50%);
+}
+
+#slider ul span:hover{
+    text-decoration: underline;
+}
+#slider2 ul span:hover{
+    text-decoration: underline;
+}
+
+a.control_prev, a.control_next,a.control_prev2, a.control_next2{
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+a.control_next,a.control_next2{
+    right: 0;
+}
+
+/* hints */
+
+.hints{
+    border: 30px solid rgb(255, 242, 184);
+    position: absolute;
+    background-color: #fff;
+    width: 500px;
+    height: 450px;
+    margin: 50px 5%;
+    padding-top: 20px;
+    top: 12%;
+    left: 55%;
+    right: 5%;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1em;
+    color: rgb(53, 53, 53);
+}
+.flip,.panel{
+    width: 400px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.panel{
+    border-left: 1px solid black;
+    display: none;
+}
+
+.hints input{
+    margin:15px;
+    margin-right: 0;
+    padding: 7px;
+    width: 45%;
+    border: 1px solid rgb(255, 212, 71);
+}
+.hints button{
+    background-color: black;
+    color: #fff;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+    margin-left: 0;
+    border: none;
+    padding: 0px 8px 0px 8px;
+}
+
+/* latest contents */
+.section-header{
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+.section-header hr{
+    height: 2px;
+    width: 30%;
+    background-color: #fcde7c;
+    margin: auto;
+    border: none;
+}
+
+.latest{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+.latest-gallery{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+ }
+
+.latest-contents{
+    width: 100%;
+    height: 310px;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.latest-contents a{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 14px;
+}
+.latest-gallery img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.latest-contents a:hover{
+    text-decoration: underline;
+}
+
+.latest-contents img:hover{
+    filter: grayscale(40%);
+}
+
+
+/* social */
+.social{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.social span{
+    display: inline-flex;
+    margin-left: 1em;
+    font-size: 20px;
+}
+
+.newsletter{
+    /* border: 2px solid blue; */
+    width: 100%;
+    margin: 10px auto;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(255, 242, 184);
+}
+
+.newsletter label{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.newsletter input{
+    margin-right: 0;
+    padding: 7px;
+    width: 45%;
+}
+.newsletter button{
+    background-color: black;
+    color: #fff;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+    margin-left: 0;
+    border: none;
+    padding: 0px 8px 0px 8px;
+}
+
+#modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 49, 49,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#modal-text{
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+    animation-name: modal;
+    animation-duration: 2s;
+}
+
+.modal-header{
+    padding: 1em;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffe96e;
+    position: relative;
+}
+
+.closemodal{
+    position: absolute;
+    top: 35%;
+    right: 1em;
+    font-weight: 700;
+}
+
+.closemodal:hover{
+    color: #ccc;
+    cursor: pointer;
+}
+
+.madal-body{
+    padding: 1em;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: black;
+}
+
+.modal-footer{
+    padding: 1em;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffe96e;
+}
+
+.modal-footer a{
+    color: #fff;
+    text-decoration: underline;
+}
+.modal-footer a:hover{
+    color: rgb(255, 148, 60);
+    text-decoration: none;
+}
+@keyframes modal {
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.footer{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 20px;
+    border-top: rgb(65, 64, 64);
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.footer1{
+    padding: 20px;
+}
+.footer1 ul{
+    text-align: center;
+}
+
+.footer1 ul li{
+    display: inline;
+    margin-left: 2em;
+}
+
+.footer1 ul li:nth-child(1){
+    margin-left: 0;
+}
+
+.footer1 ul li a{
+    font-size: 13px;
+    font-weight: 10;
+    text-transform: capitalize;
+}
+
+.footer2 p{
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* Destinations*/
+
+.travel{
+    width: 90%;
+    margin: 0 auto ;
+}
+
+.travel-gallery{
+    width: 100%;
+    height: 110em;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
+
+}
+
+.travel-pics{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.travel-pics a{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 1px  rgba(68, 68, 68, 0.5);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 30px;
+    line-height: 16px;
+    
+}
+.travel-pic1{
+    background-image: url(../../images/IMG-1984.JPG);
+    grid-column: 1 / 4;
+    grid-row: 1 / 6;
+}
+
+.travel-pic2{
+    background-image: url(../../images/IMG-1970.JPG);
+    grid-column: 4 / 6;
+    grid-row: 1 / 4;
+}
+
+.travel-pic3{
+    background-image: url(../../images/IMG-1934.JPG);
+    grid-column: 4 / 6;
+    grid-row: 4 / 7;
+}
+
+.travel-pic4{
+    background-image: url(../../images/IMG-1958.JPG);
+    grid-column: 4 / 6;
+    grid-row: 7 / 10;
+}
+
+.travel-pic5{
+    background-image: url(../../images/IMG-1949.JPG);
+    grid-column: 1 / 4;
+    grid-row: 6 / 9;
+}
+
+/* 3rd page */
+
+/* journal */
+
+.journal{
+    width: 60%;
+    margin: 0 auto;
+}
+.title{
+    margin: 30px;
+}
+.paragraph{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: 10px auto;
+    display: block;
+    line-height: 35px;
+}
+
+.paragraph img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Cuisine */
+.cuisine{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cuisine-gallery{
+    width: 100%;
+    height: 200em;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(15,1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
+
+}
+
+.cuisine-pics{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cuisine-pics a{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 1px  rgba(68, 68, 68, 0.5);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 30px;
+    line-height: 16px;
+}
+.cuisine-pic1{
+    background-image: url(../../images/IMG-1916.JPG);
+    grid-column: 1 / 4;
+    grid-row: 1 / 6;
+}
+
+.cuisine-pic2{
+    background-image: url(../../images/IMG-1913.JPG);
+    grid-column: 4 / 6;
+    grid-row: 1 / 4;
+}
+
+.cuisine-pic3{
+    background-image: url(../../images/IMG-1922.JPG);
+    grid-column: 4 / 6;
+    grid-row: 4 / 7;
+}
+
+.cuisine-pic4{
+    background-image: url(../../images/IMG-1925.JPG);
+    grid-column: 1 / 4;
+    grid-row: 6 / 9;
+}
+
+.cuisine-pic5{
+    background-image: url(../../images/mashroomsandwitch.jpg);
+    grid-column: 4 / 6;
+    grid-row: 7 / 10;
+}
+
+.cuisine-pic6{
+    background-image: url(../../images/food\ for\ beautiful\ skin.jpg);
+    grid-column: 1 / 4;
+    grid-row: 9 / 12;
+}
+.cuisine-pic7{
+    background-image: url(../../images/IMG-1956.JPG);
+    grid-column: 4 / 6;
+    grid-row: 10 / 13;
+}
+
+.cuisine-pic8{
+    background-image: url(../../images/IMG-1923.JPG);
+    grid-column: 1 / 4;
+    grid-row: 12 / 16;
+}
+.cuisine-pic9{
+    background-image: url(../../images/IMG-1955.JPG);
+    grid-column: 4 / 6;
+    grid-row: 13 / 16;
+}
+
+/* Hotel */
+.hotel{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.question{
+    height: auto;
+    font-family: 'Hind Siliguri', sans-serif ;
+    font-size: 1.2em;
+}
+
+.question-option{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 25px;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 60px;
+}
+
+.question-option img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.hotel-gallery{
+    width: 100%;
+    height: 200em;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(15,1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
+
+}
+
+.hotel-pics{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hotel-pics a{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 1px  rgba(68, 68, 68, 0.5);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 30px;
+    line-height: 16px;
+    
+}
+.hotel-pics span,.hotel-pics p, .cuisine-pics span,.cuisine-pics p,.travel-pics span, .travel-pics p{
+    font-size: 15px;
+}
+.hotel-pic1{
+    background-image: url(../../images/IMG-1975.JPG);
+    grid-column: 1 / 4;
+    grid-row: 1 / 6;
+}
+
+.hotel-pic2{
+    background-image: url(../../images/IMG-1988.JPG);
+    grid-column: 4 / 6;
+    grid-row: 1 / 4;
+}
+
+.hotel-pic3{
+    background-image: url(../../images/IMG-1992.JPG);
+    grid-column: 4 / 6;
+    grid-row: 4 / 7;
+}
+
+.hotel-pic4{
+    background-image: url(../../images/IMG-1995.JPG);
+    grid-column: 1 / 4;
+    grid-row: 6 / 9;
+}
+
+.hotel-pic5{
+    background-image: url(../../images/IMG-1986.JPG);
+    grid-column: 4 / 6;
+    grid-row: 7 / 10;
+}
+
+.hotel-pic6{
+    background-image: url(../../images/IMG-1994.JPG);
+    grid-column: 1 / 4;
+    grid-row: 9 / 12;
+}
+.hotel-pic7{
+    background-image: url(../../images/IMG-1996.JPG);
+    grid-column: 4 / 6;
+    grid-row: 10 / 13;
+}
+
+.hotel-pic8{
+    background-image: url(../../images/IMG-1987.JPG);
+    grid-column: 1 / 4;
+    grid-row: 12 / 16;
+}
+.hotel-pic9{
+    background-image: url(../../images/IMG-1993.JPG);
+    grid-column: 4 / 6;
+    grid-row: 13 / 16;
+}
+
+
+
+/* Shop */
+
+.shopheader{
+    float: right;
+}
+.recommend{
+    margin-top: 10px;
+    padding-top: 30px;
+    background-color: rgb(255, 237, 155);
+    width: 100%;
+    height: 600px;
+    
+}
+.recommend h3{
+    
+    font-family:'Hind Siliguri', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#slider2{
+    margin: 10px auto;
+}
+
+
+.merch-gallery{
+    /* border: 2px dashed black; */
+    overflow: auto;
+    width: 90%;
+    margin: 4em auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+
+}
+.merch-items{
+    /* border: 3px solid green; */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.merch-items a{
+    color: #444444;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.merch-gallery img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.ads{
+    width: 100%;
+    margin: 10px auto;
+    padding: 50px;
+    background-color: rgb(255, 221, 148);
+    display: inline-flex;
+    justify-content: stretch;
+}
+
+.ads button{
+    border: none;
+    background-color: black;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-transform: uppercase;
+}
+
+.ads button:hover{
+    background-color: rgb(253, 180, 84);
+}
+
+.ads img{
+    height: 25em;
+}
+
+.ads-text{
+    width: 60%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    justify-content: start;
+}
+
+.ads-text h3{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.ads-text span{
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+.ads-text p{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+
+
+
+
+
+/* mobile */
+
+/* mobile index */
+@media screen and (max-width: 768px){
+   
+   
+    #menu{
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 226, 163, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 9;
+    }
+    #menu ul{
+        
+        font-size: 35px;
+        list-style: none;
+        text-align: center;
+        margin: 40px auto;
+        border: none;
+        
+    }
+    #menu ul li{
+        display: block;
+        margin: 0 auto;
+        
+    }
+
+    .close{
+        font-size: 40px;
+        color: rgb(83, 83, 83);
+        position: absolute;
+        display: block;
+        top: 1em;
+        right: 0.5em;
+    }
+    
+    .open{
+        display: block;
+        font-size: 25px;
+        
+    }
+
+    
+    
+    .hints{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+    }
+
+    .flip, .panel{
+        width: auto;
+    }
+
+    #slider{
+        position: relative;
+        margin: 10px auto;
+    }
+
+    #slider ul li, #slider2 ul li{
+        width: 600px;
+        height: 400px;
+    }
+
+  
+    #slider ul span, #slider2 ul span{
+        top: 60%;
+        left: 7.5%;
+        transform: translate(210%, 50%);
+    }
+
+
+
+   
+
+
+    .latest-gallery{
+        
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 10px;
+    }
+
+    .latest-gallery img{
+        height: 190px;
+    }
+
+
+    .journal{
+        width: 90%;
+    }
+
+  
+   
+
+
+
+
+    .merch-gallery{
+        grid-template-columns:1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: center;
+    
+    }
+    .merch-items{
+        /* border: 3px solid green; */
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: inline-flex;
+        flex-direction: column;
+        position: relative;
+        
+    }
+    
+    
+    
+    .ads{
+        width: 100%;
+        margin: 10px auto;
+        padding: 30px;
+        background-color: rgb(255, 221, 148);
+        display: block;
+        justify-content: stretch;
+    }
+    
+    .ads-text{
+        position: relative;
+        display: block;
+       width: 100%;
+    }
+
+    .ads button{
+        width: 150px;
+        height: 50px;
+        position: relative;
+        display: block;
+        font-size: 0.7em;
+        margin: 10px auto;
+    }
+    
+    .ads img{
+        height: 16em;
+        margin: 0 auto;
+    }
+    
+    
+    .cuisine-gallery,.hotel-gallery,.travel-gallery{
+        width: 100%;
+        height: 80em;
+        column-gap: 10px;
+    }
+
+    .cuisine-pics a, .hotel-pics a, .travel-pics a{
+        font-size: 20px;
+    }
+    
+
+
+
+
+
+}
+
+
+@media (max-width: 425px){
+
+    #slider ul li, #slider2 ul li{
+        width: 425px;
+        height: 300px;
+    }
+
+    .recommend{
+        height: 500px;
+    }
+
+    #slider ul p, #slider2 ul p{
+        top: 25%;
+    }
+    
+    #slider ul span, #slider2 ul span{
+        top: 50%;
+        left: 7.5%;
+        transform: translate(130%, 50%);
+    }
+
+    .question-option{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .question-option img{
+        height: 150px;
+    }
+
+    
+}
+
+@media (max-width: 375px){
+
+    #slider ul li, #slider2 ul li{
+        width: 375px;
+        height: 250px;
+    }
+
+    #slider ul p, #slider2 ul p{
+        font-size: 0.7em;
+    }
+    #slider ul span, #slider2 ul span{
+        top: 60%;
+        left: 7.5%;
+        transform: translate(110%, 50%);
+    }
+
+    .latest-gallery {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .recommend{
+        height: 400px;
+    }
+}
+
+@media (max-width: 320px){
+    #slider ul li, #slider2 ul li{
+        width: 320px;
+        height: 230px;
+    }
+
+    #slider ul p, #slider2 ul p{
+        font-size: 0.7em;
+    }
+    #slider ul span, #slider2 ul span{
+        top: 60%;
+        left: 7.5%;
+        transform: translate(85%, 50%);
+    }
+    .recommend{
+        height: 400px;  
+    }
+}
